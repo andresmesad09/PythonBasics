@@ -1,5 +1,3 @@
-import enum
-from multiprocessing.sharedctypes import Value
 import easygui as gui
 from PyPDF2 import PdfFileReader, PdfFileWriter
 

@@ -10,5 +10,6 @@ def main():
     parent = str(path.parent).split('/')[-1]
     print(f"The parent of the file in the path is: {parent}")
 
+
 if __name__ == '__main__':
     main()
