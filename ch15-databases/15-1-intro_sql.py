@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 def main():
-    
+
     values = (
         ("Benjamin Sisko", "Human", 40),
         ("Jadzia Dax", "Trill", 300),
@@ -34,7 +34,6 @@ def main():
         cursor.execute("SELECT Name, Age FROM Roster")
         for row in cursor.fetchall():
             print(row)
-
 
 
 if __name__ == '__main__':

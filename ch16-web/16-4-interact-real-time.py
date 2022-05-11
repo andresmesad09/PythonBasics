@@ -1,8 +1,9 @@
 import mechanicalsoup
 import time
 
+
 def main():
-    
+
     # ----
     # 1) Dice and current time
     # ----
@@ -19,9 +20,6 @@ def main():
         # Wait 10 seconds for first 3 attempts
         if i < 3:
             time.sleep(5)
-
-
-
 
 
 if __name__ == '__main__':

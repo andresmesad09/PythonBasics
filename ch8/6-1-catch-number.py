@@ -3,7 +3,7 @@
 
 def run():
     while True:
-        try:        
+        try:
             number = int(input("Enter a number: "))
             print(f"Your number is {type(number)} and is {number}")
             break

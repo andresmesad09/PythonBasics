@@ -51,6 +51,5 @@ def main():
         pdf_writer_part2.write(output_file)
 
 
-
 if __name__ == '__main__':
     main()

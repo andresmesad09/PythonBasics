@@ -6,7 +6,7 @@ capitals_dict = {
     'Arizona': 'Phoenix',
     'Arkansas': 'Little Rock',
     'California': 'Sacramento',
-    'Colorado' : 'Denver',
+    'Colorado': 'Denver',
     'Connecticut': 'Hatford',
     'Delaware': 'Dover',
     'Florida': 'Tallahasse',
@@ -53,6 +53,7 @@ capitals_dict = {
     'Wyoming': 'Cheyenne',
 }
 
+
 def main():
     random_state = random.choice(list(capitals_dict.keys()))
     random_capital = capitals_dict[random_state]
@@ -67,9 +68,6 @@ def main():
             break
         else:
             print("Incorrect!")
-
-
-        
 
 
 if __name__ == '__main__':

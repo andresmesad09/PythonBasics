@@ -5,12 +5,13 @@ displays the average number rolled
 
 import random
 
+
 def run():
     total = 0
     for i in range(10000):
-        total += random.randint(1,6)
+        total += random.randint(1, 6)
     return total / 10000
-    
+
 
 if __name__ == '__main__':
     median = run()

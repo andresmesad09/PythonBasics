@@ -7,5 +7,6 @@ def run():
         if letter.upper() == 'Q':
             break
 
+
 if __name__ == '__main__':
     run()

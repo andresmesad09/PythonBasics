@@ -1,15 +1,16 @@
 from pathlib import Path
 from PyPDF2 import PdfFileReader, PdfFileWriter, PdfFileMerger
 
+
 def get_page_text(page):
     return page.extractText()
+
 
 def main():
     pdf_path = Path().cwd() / "ch14-pdf" / "practice_files" / "scrambled.pdf"
     output_pdf = Path().cwd() / "ch14-pdf" / "unscrambled.pdf"
     pdf_reader = PdfFileReader(str(pdf_path))
     pdf_writer = PdfFileWriter()
-
 
     pdf_reader = PdfFileReader(str(pdf_path))
     pdf_writer = PdfFileWriter()
@@ -25,8 +26,6 @@ def main():
 
     with output_pdf.open(mode="wb") as output_file:
         pdf_writer.write(output_file)
-
-
 
 
 if __name__ == '__main__':

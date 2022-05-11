@@ -1,10 +1,10 @@
-# 1 
+# 1
 data = (
     (1, 2),
     (3, 4)
 )
 
-# 2 
+# 2
 for n, nested in enumerate(data, start=1):
     print(f'Row {n} sum: {sum(nested)}')
 

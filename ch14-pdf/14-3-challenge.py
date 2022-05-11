@@ -7,8 +7,8 @@ class PdfFileSplitter:
     def __init__(self, file_path) -> None:
         self.file_path = file_path
 
-
     # Methods
+
     def split(self, breakpoint: int):
         pdf_reader = PdfFileReader(str(self.file_path))
         self.writer1 = PdfFileWriter()
@@ -35,4 +35,3 @@ input_pdf = Path().cwd() / "ch14-pdf" / "practice_files" / "Pride_and_Prejudice.
 pdf_splitter = PdfFileSplitter(input_pdf)
 pdf_splitter.split(breakpoint=150)
 pdf_splitter.write("mydoc_split")
-

@@ -13,7 +13,7 @@ def main():
     # ----
     html_text = soup.get_text()
     print(html_text)
-    
+
     # ----
     # 2) List of all the links
     # ----

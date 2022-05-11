@@ -2,9 +2,11 @@ def convert_cel_to_far(celsius):
     fahrenheit = celsius * (9/5) + 32
     return fahrenheit
 
+
 def convert_far_to_cel(fahrenheit):
     celsius = (fahrenheit - 32) * (5/9)
     return celsius
+
 
 def main():
     fahrenheit = float(input('Enter a temperature in degrees F: '))

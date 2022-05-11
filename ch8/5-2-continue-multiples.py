@@ -7,6 +7,5 @@ def run():
             print(i)
 
 
-
 if __name__ == '__main__':
     run()

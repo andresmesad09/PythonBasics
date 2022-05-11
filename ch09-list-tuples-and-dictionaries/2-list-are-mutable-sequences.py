@@ -25,4 +25,4 @@ print(f'Does breakfast have three items? {len(breakfast) == 3}')
 
 # Create a new list called lengths using list comprehension that contains the lengths of each string in the breakfast list
 lengths = [len(item) for item in breakfast]
-print(lengths)  
+print(lengths)

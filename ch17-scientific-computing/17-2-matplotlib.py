@@ -1,7 +1,8 @@
-import  matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from pathlib import Path
+
 
 def main():
     # ----
@@ -9,7 +10,7 @@ def main():
     # ----
 
     # Plot
-    ys = np.arange(1,13).reshape(3,4)
+    ys = np.arange(1, 13).reshape(3, 4)
     fig, ax = plt.subplots()
     ax.plot(ys, linestyle='--')
     fig.suptitle('Plot a 3 x 4 np.array)')
@@ -42,7 +43,7 @@ def main():
     path_csv = Path.cwd() / 'ch17-scientific-computing' / 'pirates.csv'
     path_png = Path.cwd() / 'ch17-scientific-computing' / 'pirates.png'
     df = pd.read_csv(str(path_csv))
-    
+
     fig, ax = plt.subplots()
     ax.plot(df['Pirates'], df['Temperature'])
     ax.set_xlabel('Number or pirates')
@@ -50,8 +51,6 @@ def main():
     fig.suptitle('Number of Pirates vs Temperature')
     fig.savefig(str(path_png))
     plt.show()
-
-
 
 
 if __name__ == '__main__':

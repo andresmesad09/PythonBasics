@@ -8,6 +8,7 @@ def main():
     transformed_text = transformed_text.replace('t', '7')
     return transformed_text
 
+
 if __name__ == '__main__':
     result = main()
     print(result)

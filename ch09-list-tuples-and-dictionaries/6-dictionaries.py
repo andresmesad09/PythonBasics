@@ -16,11 +16,10 @@ def main():
     if 'Discovery' not in captains:
         captains['Discovery'] = 'unknown'
 
-
     print('Fourth point')
     for ship, captain in captains.items():
         print(f'The {ship} is captained by {captain}')
-    
+
     print('Fifth point')
     print(f"Before deletion \n {captains}")
     try:

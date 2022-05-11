@@ -1,7 +1,8 @@
 import mechanicalsoup
 
+
 def main():
-    
+
     # ----
     # 1) login
     # ----
@@ -23,14 +24,14 @@ def main():
     print(profile_pages.url)
 
     # ----
-    # 3) 
+    # 3)
     # ----
     browser = mechanicalsoup.Browser()
     login_page = browser.get(url)
     print(login_page.soup.title)
 
     # ----
-    # 4) 
+    # 4)
     # ----
     form = login_html.select("form")[0]
     form.select("input")[0]["value"] = "zeus"
@@ -40,7 +41,6 @@ def main():
     profile_pages = browser.submit(form, login_page.url)
 
     print(profile_pages.url)
-
 
 
 if __name__ == '__main__':

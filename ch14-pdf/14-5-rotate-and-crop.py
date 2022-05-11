@@ -47,7 +47,7 @@ def main():
         # Add two sides to the writer
         pdf_writer.addPage(left_side)
         pdf_writer.addPage(right_side)
-    
+
     # Create the file
     with split_pdf.open(mode="wb") as file:
         pdf_writer.write(file)

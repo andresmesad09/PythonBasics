@@ -9,13 +9,15 @@ class Dog:
     # Instance method
     def __str__(self) -> str:
         return f'{self.name} is {self.age} years old. And has a {self.coat_color} coat'
-    
+
     # Another instance method
     def speak(self, sound):
         return f'{self.name} says {sound}'
 
+
 miles = Dog('miles', 4, 'blue')
 print(miles)
+
 
 class Car:
     def __init__(self, color, mileage) -> None:
@@ -24,7 +26,7 @@ class Car:
 
     def __str__(self) -> str:
         return f'The {self.color} has {self.mileage:,} miles.'
-    
+
     def drive(self, miles):
         self.mileage += miles
 

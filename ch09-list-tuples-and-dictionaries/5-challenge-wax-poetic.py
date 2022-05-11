@@ -7,7 +7,6 @@ prepositions = ['againts', 'after', 'into', 'beneath', 'upon', 'for', 'in', 'lik
 adverbs = ['curiously', 'extravagantly', 'tantalizingly', 'furiously', 'sensuously']
 
 
-
 def make_poem():
     # Three nouns
     noun1 = random.choice(nouns)
@@ -55,6 +54,7 @@ def make_poem():
     """
 
     return poem
+
 
 if __name__ == '__main__':
     poem = make_poem()

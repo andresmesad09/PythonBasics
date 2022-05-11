@@ -1,5 +1,6 @@
 import random
 
+
 def coin_flip():
     coin_result = random.randint(0, 1)
     if coin_result == 0:
@@ -7,8 +8,9 @@ def coin_flip():
     else:
         return 'tails'
 
+
 def run():
-    
+
     flips = 0
     trials = 10000
 
@@ -23,7 +25,7 @@ def run():
             while coin_flip() == 'tails':
                 flips += 1
             flips += 1
-    
+
     avg_flips = flips / trials
     return avg_flips
 

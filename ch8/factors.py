@@ -7,6 +7,7 @@ def factors(num):
         else:
             print(f"{x} is a factor of {num}")
 
+
 def run():
     num = int(input("Enter a positive integer: "))
     factors(num)

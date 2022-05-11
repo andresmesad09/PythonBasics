@@ -16,11 +16,14 @@ def enrollment_stats(my_list_of_lists):
     tuition_fees = [university[2] for university in my_list_of_lists]
     return enrollments, tuition_fees
 
+
 def mean(my_list):
     return sum(my_list) / len(my_list)
 
+
 def median(my_list):
     return statistics.median_grouped(my_list)
+
 
 def main():
     students_list = enrollment_stats(universities)[0]

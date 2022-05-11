@@ -1,5 +1,6 @@
 import random
 
+
 def a_wins(prob):
     """Return True of a regional election, either True or False.
 
@@ -10,8 +11,9 @@ def a_wins(prob):
     else:
         return False
 
+
 def run():
-    
+
     elections = 10000
     candidate_a_wins = 0
 
@@ -28,10 +30,10 @@ def run():
             candidate_a_wins += 1
         else:
             continue
-    
+
     percentage = (candidate_a_wins / elections) * 100
     print(f"The percentage of times in which candidate A wins is: {percentage:.2f}")
-   
+
 
 if __name__ == '__main__':
     run()

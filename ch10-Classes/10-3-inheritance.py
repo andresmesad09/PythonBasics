@@ -10,13 +10,13 @@ def main():
         # Instance method
         def __str__(self) -> str:
             return f'{self.name} is {self.age} years old'
-        
+
         # Another instance method
         def speak(self, sound):
             return f'{self.name} says {sound}'
 
     class GoldenRetriver(Dog):
-        def speak(self, sound = 'Bark'):
+        def speak(self, sound='Bark'):
             return super().speak(sound)
 
     # Second point
@@ -36,7 +36,6 @@ def main():
 
     my_square = Square(4)
     print(my_square.area())
-    
 
 
 if __name__ == '__main__':

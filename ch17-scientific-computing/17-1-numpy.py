@@ -36,7 +36,7 @@ def main():
     # ----
     # 6) Reshape C into an array of dimensions 3 x 3 x 2
     # ----
-    new_c = C.reshape(3,3,2)
+    new_c = C.reshape(3, 3, 2)
     print(f"new_c is: \n{new_c}")
 
 

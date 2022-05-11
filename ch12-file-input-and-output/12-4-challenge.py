@@ -1,5 +1,6 @@
 import pathlib
 
+
 def main():
     cwd_path = pathlib.Path().cwd() / "ch12-file-input-and-output"
     images_path = cwd_path / "images"
@@ -11,7 +12,7 @@ def main():
     # Define the extensions related to images
     image_types = ['.png', '.gif', '.jpg', '.jpeg']
 
-    # Iterate over each 
+    # Iterate over each
     for path in documents_path.rglob('*'):
         if path.is_file():
             if path.suffix in image_types:
